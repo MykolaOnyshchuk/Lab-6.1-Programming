@@ -1,14 +1,14 @@
 #pragma once
 
-class function   //Створюємо базовий клас
+class function   //РЎС‚РІРѕСЂСЋС”РјРѕ Р±Р°Р·РѕРІРёР№ РєР»Р°СЃ
 {
 public:
 	double x;
-	virtual void getResult() = 0;   //Суто віртуальна функція
-	void setX();   //Сетер
+	virtual void getResult() = 0;   //РЎСѓС‚Рѕ РІС–СЂС‚СѓР°Р»СЊРЅР° С„СѓРЅРєС†С–СЏ
+	void setX();   //РЎРµС‚РµСЂ
 };
 
-//Унаслідуємо похідні класи і перевизначаємо функцію getResult
+//РЈРЅР°СЃР»С–РґСѓС”РјРѕ РїРѕС…С–РґРЅС– РєР»Р°СЃРё С– РїРµСЂРµРІРёР·РЅР°С‡Р°С”РјРѕ С„СѓРЅРєС†С–СЋ getResult
 
 class arcSin : public function
 {
